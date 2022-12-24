@@ -47,3 +47,19 @@ Dict = {1: 'JavaTpoint', 2: 'Peter', 3: 'Thomas'}
 pop_ele = Dict.pop(3)   
 print(Dict)  
 
+
+phonebook = {
+    "John" : 938477566,
+    "Jack" : 938377264,
+    "Jill" : 947662781
+}
+
+if "Jake" in phonebook:
+    print("Jake is listed in the phonebook")
+
+if "Jill" in phonebook:
+    print("Jill is not listed in the phonebook")
+
+
+
+
