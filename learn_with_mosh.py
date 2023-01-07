@@ -45,3 +45,22 @@
 #     i = i + 1
 
 
+# weight_lbs = input("Weight in lbs : ")
+# weight_kg = int(weight_lbs) * 0.45
+# print(weight_kg)
+
+# course = "Python's course for begginers"
+# print(course)
+
+I = []
+
+n = int(input("Enter the number of element in the list: "))
+
+for i in range(0,n):
+    I.append(input("Enter the item: "))
+
+print("Printing the list item..")
+
+for i in I:
+    print(i)
+
