@@ -55,97 +55,202 @@
 
 # Python program to show how slicing works in Python tuples  
   
-# Creating a tuple  
-tuple_ = ("Python", "Tuple", "Ordered", "Immutable", "Collection", "Objects")  
+# # Creating a tuple  
+# tuple_ = ("Python", "Tuple", "Ordered", "Immutable", "Collection", "Objects")  
   
-# Using slicing to access elements of the tuple  
-print("Elements between indices 1 and 3: ", tuple_[1:3])
+# # Using slicing to access elements of the tuple  
+# print("Elements between indices 1 and 3: ", tuple_[1:3])
 
-# Using negative indexing in slicing
-print("Elements between indices 0 and -4: ", tuple_[:-4])
+# # Using negative indexing in slicing
+# print("Elements between indices 0 and -4: ", tuple_[:-4])
 
-# Printing the entire tuple by using the default start and end values.
-print("Entire tuple: ", tuple_[:])
+# # Printing the entire tuple by using the default start and end values.
+# print("Entire tuple: ", tuple_[:])
 
-# Python program to show how to delete elements of a Python tuple  
+# # Python program to show how to delete elements of a Python tuple  
   
-# Creating a tuple  
-tuple_ = ("Python", "Tuple", "Ordered", "Immutable", "Collection", "Objects")  
+# # Creating a tuple  
+# tuple_ = ("Python", "Tuple", "Ordered", "Immutable", "Collection", "Objects")  
   
-# Deleting a particular element of the tuple
-try:
-    del tuple_[3]
-    print(tuple_)
-except Exception as e:
-    print(e)
+# # Deleting a particular element of the tuple
+# try:
+#     del tuple_[3]
+#     print(tuple_)
+# except Exception as e:
+#     print(e)
 
-# Deleting the variable from the global space of the program  
-del tuple_
+# # Deleting the variable from the global space of the program  
+# del tuple_
 
-# Trying accessing the tuple after deleting it  
-try:
-    print(tuple_)
-except Exception as e:
-    print(e)
+# # Trying accessing the tuple after deleting it  
+# try:
+#     print(tuple_)
+# except Exception as e:
+#     print(e)
 
-# Python program to show repetition in tuples  
+# # Python program to show repetition in tuples  
     
-tuple_ = ('Python',"Tuples")  
-print("Original tuple is: ", tuple_)  
+# tuple_ = ('Python',"Tuples")  
+# print("Original tuple is: ", tuple_)  
   
-# Repeting the tuple elements  
-tuple_ = tuple_ * 3  
-print("New tuple is: ", tuple_) 
+# # Repeting the tuple elements  
+# tuple_ = tuple_ * 3  
+# print("New tuple is: ", tuple_) 
 
-# Python program to show how to tuple methods (.index() and .count()) work  
+# # Python program to show how to tuple methods (.index() and .count()) work  
   
-# Creating a tuple  
-tuple_ = ("Python", "Tuple", "Ordered", "Immutable", "Collection", "Ordered")  
+# # Creating a tuple  
+# tuple_ = ("Python", "Tuple", "Ordered", "Immutable", "Collection", "Ordered")  
   
-# Counting the occurrence of an element of the tuple using the count() method  
-print(tuple_.count('Ordered'))  
+# # Counting the occurrence of an element of the tuple using the count() method  
+# print(tuple_.count('Ordered'))  
   
-# Getting the index of an element using the index() method  
-print(tuple_.index('Ordered')) # This method returns index of the first occurrence of the element  
+# # Getting the index of an element using the index() method  
+# print(tuple_.index('Ordered')) # This method returns index of the first occurrence of the element  
 
-# Python program to show how to perform membership test for tuples  
+# # Python program to show how to perform membership test for tuples  
   
-# Creating a tuple  
-tuple_ = ("Python", "Tuple", "Ordered", "Immutable", "Collection", "Ordered")  
+# # Creating a tuple  
+# tuple_ = ("Python", "Tuple", "Ordered", "Immutable", "Collection", "Ordered")  
   
-# In operator  
-print('Tuple' in tuple_)  
-print('Items' in tuple_)  
+# # In operator  
+# print('Tuple' in tuple_)  
+# print('Items' in tuple_)  
   
-# Not in operator  
-print('Immutable' not in tuple_)  
-print('Items' not in tuple_)  
+# # Not in operator  
+# print('Immutable' not in tuple_)  
+# print('Items' not in tuple_)  
 
-# Python program to show how to iterate over tuple elements  
+# # Python program to show how to iterate over tuple elements  
   
-# Creating a tuple  
-tuple_ = ("Python", "Tuple", "Ordered", "Immutable")  
+# # Creating a tuple  
+# tuple_ = ("Python", "Tuple", "Ordered", "Immutable")  
   
-# Iterating over tuple elements using a for loop  
-for item in tuple_:  
-    print(item)  
+# # Iterating over tuple elements using a for loop  
+# for item in tuple_:  
+#     print(item)  
 
-# Python program to show that Python tuples are immutable objects  
+# # Python program to show that Python tuples are immutable objects  
   
-# Creating a tuple  
-tuple_ = ("Python", "Tuple", "Ordered", "Immutable", [1,2,3,4])  
+# # Creating a tuple  
+# tuple_ = ("Python", "Tuple", "Ordered", "Immutable", [1,2,3,4])  
   
-# Trying to change the element at index 2  
-try:  
-    tuple_[2] = "Items"  
-    print(tuple_)  
-except Exception as e:  
-    print( e )  
+# # Trying to change the element at index 2  
+# try:  
+#     tuple_[2] = "Items"  
+#     print(tuple_)  
+# except Exception as e:  
+#     print( e )  
   
-# But inside a tuple, we can change elements of a mutable object  
-tuple_[-1][2] = 10   
-print(tuple_)  
+# # But inside a tuple, we can change elements of a mutable object  
+# tuple_[-1][2] = 10   
+# print(tuple_)  
   
-# Changing the whole tuple  
-tuple_ = ("Python", "Items")  
-print(tuple_)  
+# # Changing the whole tuple  
+# tuple_ = ("Python", "Items")  
+# print(tuple_)  
+
+
+# Python program to create a tuple without using parentheses    
+# Creating a tuple 
+
+# tuple_ = 4, 5.7, "Tuples", ["Python", "Tuples"]
+
+# # Displaying the tuple created 
+# print(tuple_)
+
+# # Checking the data type of object tuple_    
+# print(type(tuple_))
+
+# # Trying to modify tuple_
+# try:
+#     tuple_[1] = 4.2
+# except:
+#     print(TypeError)
+
+# print(tuple_)
+
+# Python program to show how negative indexing works in Python tuples    
+# Creating a tuple   
+# tuple_ = ("Python", "Tuple", "Ordered", "Collection")
+# # Printing elements using negative indices  
+# print("Element at -1 index: ", tuple_[-1])
+# print("Element between -4 and -1 are: ", tuple_[-4:-2])
+
+# Python program to show how slicing works in Python tuples    
+# Creating a tuple    
+# tuple_ = ("Python", "Tuple", "Ordered", "Immutable", "Collection", "Objects")    
+# # Using slicing to access elements of the tuple 
+# print("Elements between indices 1 and 3: ", tuple_[1:3])    
+# # Using negative indexing in slicing    
+# print("Elements between indices 0 and -4: ", tuple_[:-4])    
+# # Printing the entire tuple by using the default start and end values.     
+# print("Entire tuple: ", tuple_[:])    
+
+# Python program to show how to delete elements of a Python tuple    
+# Creating a tuple    
+# tuple_ = ("Python", "Tuple", "Ordered", "Immutable", "Collection", "Objects")    
+# # Deleting a particular element of the tuple    
+# try:
+#     del tuple_[3]
+#     print(tuple_)
+# except Exception as e:
+#     print(e)
+
+# # Deleting the variable from the global space of the program    
+# del tuple_    
+# # Trying accessing the tuple after deleting it    
+# try:
+#     print(tuple_)
+# except Exception as e:
+#     print(e)
+
+# Python program to show repetition in tuples    
+# tuple_ = ("Python", "Tuples")
+# print("Original tuple is: ", tuple_)
+# # Repeting the tuple elements    
+# tuple_ = tuple_ * 3
+# print(tuple_)
+
+# # Creating tuples  
+# T1 = (0, 1, 5, 6, 7, 2, 2, 4, 2, 3, 2, 3, 1, 3, 2)  
+# T2 = ('python', 'java', 'python', 'Tpoint', 'python', 'java')  
+# # counting the appearance of 3  
+# res = T1.count(2)  
+# print('Count of 2 in T1 is:', res)  
+# # counting the appearance of java  
+# res = T2.count('java')  
+# print('Count of Java in T2 is:', res)  
+
+# Python program to show how to perform membership test for tuples    
+# Creating a tuple    
+# tuple_ = ("Python", "Tuple", "Ordered", "Immutable", "Collection", "Ordered")    
+# # In operator    
+# print('Tuple' in tuple_)    
+# print('Items' in tuple_)    
+# # Not in operator    
+# print('Immutable' not in tuple_)    
+# print('Items' not in tuple_)   
+
+# Python program to show how to iterate over tuple elements    
+# Creating a tuple    
+# tuple_ = ("Python", "Tuple", "Ordered", "Immutable")    
+# # Iterating over tuple elements using a for loop    
+# for item in tuple_:    
+#     print(item)     
+
+# Python program to show that Python tuples are immutable objects    
+# Creating a tuple    
+tuple_ = ("Python", "Tuple", "Ordered", "Immutable", [1,2,3,4])    
+# Trying to change the element at index 2    
+try:    
+    tuple_[2] = "Items"    
+    print(tuple_)    
+except Exception as e:    
+    print( e )    
+# But inside a tuple, we can change elements of a mutable object    
+tuple_[-1][2] = 10     
+print(tuple_)    
+# Changing the whole tuple    
+tuple_ = ("Python", "Items")    
+print(tuple_)    
