@@ -21,18 +21,18 @@
 # else:  
 #     print("Nothing found!!") 
 
-import re  
+# import re  
   
-line = "Learn Python through tutorials on javatpoint"
+# line = "Learn Python through tutorials on javatpoint"
 
-match_object = re.match(r'through', line, re.M|re.I)
-if match_object:
-    print("match object group : ", match_object_group())
-else:
-    print("There isn't any match")
+# match_object = re.match(r'through', line, re.M|re.I)
+# if match_object:
+#     print("match object group : ", match_object_group())
+# else:
+#     print("There isn't any match")
 
-search_object = re.search( r' .*t? ', line, re.M|re.I)  
-if search_object:  
-    print("search object group : ", search_object.group())  
-else:  
-    print("Nothing found!!")  
+# search_object = re.search( r' .*t? ', line, re.M|re.I)  
+# if search_object:  
+#     print("search object group : ", search_object.group())  
+# else:  
+#     print("Nothing found!!")  
